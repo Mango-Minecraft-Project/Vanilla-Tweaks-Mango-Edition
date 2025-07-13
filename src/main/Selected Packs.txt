@@ -1,0 +1,12 @@
+Vanilla Tweaks Resource Pack
+Version: 1.20
+Packs:
+	OreBorders
+	SuspiciousSandGravelBorders
+	BuddingAmethystBorders
+	VisualInfestedStoneItems
+	VisualWaxedCopperItems
+	FullAgeCropMarker
+	FullAgeAmethystMarker
+	VisibleTripwires
+	CleanRedstoneDust

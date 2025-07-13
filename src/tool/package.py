@@ -32,21 +32,21 @@ def get_files(package_type: PACKAGE_TYPE, source_type: SOURCE_TYPE):
     Args:
         type (str): type of file to get
     """
-    files = []
+    files = ["credits.txt", "Selected Packs.txt"]
     match package_type:
         case "data_pack":
-            files = ["data/", "pack.png", "pack.mcmeta"]
+            files.extend(["data/", "pack.png", "pack.mcmeta"])
         case "resource_pack":
-            files = ["assets/", "pack.png", "pack.mcmeta"]
+            files.extend(["assets/", "pack.png", "pack.mcmeta"])
         case "mod":
-            files = [
+            files.extend([
                 "assets/",
                 "data/",
                 "META-INF/",
                 "pack.png",
                 "pack.mcmeta",
                 "fabric.mod.json",
-            ]
+            ])
     return filter(
         lambda path: path.exists(),
         map(lambda path: (MAIN if source_type == "main" else GENERATED) / path, files),
@@ -127,7 +127,7 @@ def package(type: PACKAGE_TYPE):
 
 def main():
     # package("data_pack")
-    # package("resource_pack")
+    package("resource_pack")
     package("mod")
 
 main()

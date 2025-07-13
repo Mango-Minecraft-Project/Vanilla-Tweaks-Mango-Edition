@@ -5,7 +5,7 @@ CWD = Path.cwd()
 MAIN = CWD / "src/main"
 GENERATED = CWD / "src/generated"
 
-NAMESPACE = "..."
+NAMESPACE = "vanilla_tweaks_mango_edition"
 
 COLORS = [
     "black",

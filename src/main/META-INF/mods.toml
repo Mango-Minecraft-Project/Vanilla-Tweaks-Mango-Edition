@@ -5,24 +5,36 @@ loaderVersion = "[1,)" # https://maven.apache.org/enforcer/enforcer-rules/versio
 
 license = "AGPL-3.0"
 issueTrackerURL = "https://github.com/"
-# showAsDataPack = false
-# showAsResourcePack = false
-# clientSideOnly = false
+showAsResourcePack = true
 
 [[mods]]
-modId = ""
-version = "0.0.1"
-displayName = ""
-description = """"""
+modId = "vanilla_tweaks_mango_edition"
+version = "1.0.0"
+displayName = "Vanilla Tweaks - Mango Edition"
+description = """a collection of quality-of-life improvements and tweaks for Minecraft, designed to enhance the vanilla gameplay experience without altering the core mechanics."""
 logoFile = "pack.png"
 # updateJSONURL = ""
-# credits = ""
-authors = ""
-# displayURL = "https://github.com/"
+credits = "Vanilla Tweaks"
+authors = "Vanilla Tweaks Team, MangoJellyPudding"
+displayURL = "https://github.com/Mango-Minecraft-Project/Vanilla-Tweaks-Mango-Edition"
 
-[[dependencies.mod_id]]
+[[dependencies.vanilla_tweaks_mango_edition]]
 modId = "minecraft"
 mandatory = true
-# versionRange = "" # https://maven.apache.org/enforcer/enforcer-rules/versionRanges.html
-# ordering = "NONE" # NONE, AFTER, BEFORE. default is NONE
-# side = "BOTH" # BOTH, CLIENT, SERVER. default is BOTH
+versionRange = "[1.20, 1.21)" # https://maven.apache.org/enforcer/enforcer-rules/versionRanges.html
+side = "CLIENT" # BOTH, CLIENT, SERVER. default is BOTH
+
+[[dependencies.vanilla_tweaks_mango_edition]]
+modId = "ars_nouveau"
+mandatory = false
+side = "CLIENT"
+
+[[dependencies.vanilla_tweaks_mango_edition]]
+modId = "farmersdelight"
+mandatory = false
+side = "CLIENT"
+
+[[dependencies.vanilla_tweaks_mango_edition]]
+modId = "manors_bounty"
+mandatory = false
+side = "CLIENT"

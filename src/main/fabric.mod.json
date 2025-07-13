@@ -1,30 +1,27 @@
-// https://wiki.fabricmc.net/documentation:fabric_mod_json
 {
-  // Mandatory fields
   "schemaVersion": 1,
-  "id": "",
-  "version": "0.0.1",
+  "id": "vanilla_tweaks_mango_edition",
+  "version": "1.0.0",
 
-  // Optional fields
-  // - Mod Loading
-  "environment": "*", // client, server, or * (both client and server). default: *
+  "environment": "client",
 
-  // - Dependency resolution
-  "depends": {},
-  // "recommends": {},
-  // "suggests": {},
-  // "breaks": {},
-  // "conflicts": {},
-
-  // - Metadata
-  "name": "",
-  "description": "",
-  "contact": {
-    "homepage": "https://modrinth.com/",
-    "sources": "https://github.com/",
-    "issues": "https://github.com//issues"
+  "depends": {
+    "minecraft": ">=1.20.0 <1.21.0"
   },
-  "authors": [""],
+  "suggests": {
+    "ars_nouveau": "*",
+    "farmersdelight": "*",
+    "manors_bounty": "*"
+  },
+
+  "name": "Vanilla Tweaks Mango Edition",
+  "description": "a collection of quality-of-life improvements and tweaks for Minecraft, designed to enhance the vanilla gameplay experience without altering the core mechanics.",
+  "contact": {
+    "homepage": "https://modrinth.com/project/Xef3oQg4",
+    "sources": "https://github.com/Mango-Minecraft-Project/Vanilla-Tweaks-Mango-Edition",
+    "issues": "https://github.com/Mango-Minecraft-Project/Vanilla-Tweaks-Mango-Edition/issues"
+  },
+  "authors": ["Vanilla Tweaks Team", "MangoJellyPudding"],
   "contributors": [],
   "license": "AGPL-3.0",
   "icon": "pack.png"
